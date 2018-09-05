@@ -259,6 +259,7 @@ p.ciudad {
     float: right;
     padding-right: 15px;
     padding-top: 10px;
+    
 }
 
 @media only screen and (min-width: 768px) {
@@ -273,6 +274,13 @@ p.ciudad {
         padding-right: 60px;
     }
 
+}
+
+@media only screen and (max-width: 480px) {
+    div.informacion-evento div p {
+        font-size: 15px;
+        font-weight: bold;
+    }
 }
 
 p.slogan {
