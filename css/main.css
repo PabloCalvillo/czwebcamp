@@ -414,9 +414,18 @@ section.programa {
     position: relative;
 }
 
-div.contenedor-video {
-    max-width: 100%;
-    overflow-x: hidden;
+video {
+    display: none;
+}
+
+@media only screen and (min-width: 480px) {
+    div.contenedor-video {
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+    video {
+        display: block;
+    }
 }
 
 div.contenido-programa {
