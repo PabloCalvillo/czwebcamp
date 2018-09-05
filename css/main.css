@@ -251,16 +251,14 @@ div.informacion-evento p i {
 
 p.fecha {
     float: left;
-    padding-left: 60px;
     padding-top: 10px;
-    padding-bottom: 10px;
+    padding-left: 20px;
 }
 
 p.ciudad {
     float: right;
-    padding-right: 60px;
     padding-top: 10px;
-    padding-bottom: 10px;
+    padding-right: 20px;
     
 }
 
