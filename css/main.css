@@ -296,6 +296,13 @@ p.ciudad {
     }
 }
 
+@media only screen and (max-width: 360px) {
+    div.informacion-evento div p {
+        font-size: 12px;
+        font-weight: bold;
+    }
+}
+
 p.slogan {
     text-transform: none !important;
 }
