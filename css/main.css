@@ -435,10 +435,6 @@ section.programa {
     position: relative;
 }
 
-.programa-evento {
-    display: none;
-}
-
 video {
     display: none;
 }
@@ -456,22 +452,7 @@ video {
     }
 }
 
-@media only screen and (min-width: 1920px) {
-    div.contenedor-video {
-        max-width: 100%;
-        overflow-x: hidden;
-    }
-    video {
-        display: block;
-    }
-    .programa-evento {
-        display: block;
-    }
-    
-}
-
 div.contenido-programa {
-    position: absolute;
     top: 0;
     left: 0;
     height: 100%;
