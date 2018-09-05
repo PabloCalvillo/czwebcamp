@@ -430,17 +430,26 @@ div.contenido-programa {
 div.programa-evento {
     background-color: rgba(255, 255, 255, 0.8);
     padding: 15px;
-    margin-top: 80px;
+    margin-top: 0;
+}
+
+div.programa-evento h2 {
+    margin: 0;
+    padding: 15px 0 20px 0;
 }
 
 @media only screen and (min-width: 992px) {
     div.programa-evento {
+        margin-top: 80px;
         width: 50%;
     }
 }
 
 @media only screen and (min-width: 768px) {
-    
+    div.programa-evento {
+        margin-top: 80px;
+        width: 70%;
+    }
 }
 
 nav.menu-programa {
