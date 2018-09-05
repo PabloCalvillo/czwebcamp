@@ -293,7 +293,7 @@ p.slogan span {
 
 h1.nombre-sitio {
     font-size: 11.5vw;
-    margin: 0;
+    margin: 10px 0 0 0;
     text-transform: uppercase;
     font-family: 'PT Sans', sans-serif;
     
