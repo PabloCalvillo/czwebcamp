@@ -443,7 +443,7 @@ video {
     display: none;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 769px) {
     div.contenedor-video {
         max-width: 100%;
         overflow-x: hidden;
@@ -454,6 +454,20 @@ video {
     .programa-evento {
         display: block;
     }
+}
+
+@media only screen and (min-width: 1920px) {
+    div.contenedor-video {
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+    video {
+        display: block;
+    }
+    .programa-evento {
+        display: block;
+    }
+    
 }
 
 div.contenido-programa {
@@ -548,10 +562,14 @@ div.detalle-evento p {
 
 .invitados {
     padding-top: 0;
-    padding-bottom: 10%;
+    padding-bottom: 20px;
 }
 
-
+@media only screen and (min-width: 768px) {
+    .invitados {
+        padding: 20px 0 155px 0;
+    }
+}
 
 ul.lista-invitados li {
     padding: 10px;
