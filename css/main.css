@@ -803,18 +803,18 @@ div.mapa {
 }
 }
 
-/** Testimoniales **/
+/** Testimonios **/
 
-div.testimoniales {
+div.testimonios {
     padding-bottom: 20px;
 }
 
-div.testimonial {
+div.testimonio {
     padding: 5px;
 }
 
 @media only screen and (min-width: 768px) {
-    div.testimonial {
+    div.testimonio {
         float: left;
         width: 33.3%;
     }
@@ -855,18 +855,18 @@ blockquote p::before {
     color: #fe4918;
 }
 
-footer.info-testimonial {
+footer.info-testimonio {
     padding: 0;
 }
 
-footer.info-testimonial img {
+footer.info-testimonio img {
     float: left;
     width: 20%;
     border-radius: 50%;
     margin-left: 20px;
 }
  
-footer.info-testimonial cite {
+footer.info-testimonio cite {
     text-align: left;
     color: #fe4918;
     text-transform: uppercase;
@@ -878,7 +878,7 @@ footer.info-testimonial cite {
     font-style: normal;
 }
 
-footer.info-testimonial cite span {
+footer.info-testimonio cite span {
     color: #000000;
     display: block;
     text-transform: none;
