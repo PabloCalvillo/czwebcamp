@@ -152,6 +152,14 @@ body {
 .seccion p {
     font-size: 1.2em;
     text-align: center;
+    margin-bottom: 50px;
+}
+
+@media only screen and (min-width: 768px) {
+    .seccion p {
+        margin-bottom: 25px;
+    }
+    
 }
 
 h2 {
@@ -169,6 +177,7 @@ h2::after {
     width: 100px;
     display: block;
 }
+
 
 h3 {
     font-size: 1.7em;
@@ -195,15 +204,21 @@ ul {
        margin-top: 20px;
        display: inline-block;
        transition: all .4s ease;
+       display: block;
+        text-align: center;
+}
+
+@media only screen and (min-width: 768px) {
+    .float-right {
+    float: right;
+    }
 }
 
 .button:hover {
     background-color: #e33000;
 }
 
-.float-right {
-    float: right;
-}
+
 
 /** Header **/
 div.hero {
@@ -410,10 +425,17 @@ div.menu-movil {
     float: right;
     text-align: right;
     margin-top: 9px;
+    margin-right: 6px;
 }
 
 div.menu-movil:hover {
     cursor: pointer;
+}
+
+@media only screen and (max-width: 360px) {
+    div.menu-movil {
+        width: 50px;
+    }
 }
 
 @media only screen and (min-width: 768px) {
@@ -431,15 +453,17 @@ div.menu-movil span {
 
 /** Talleres **/
 
-section.programa {
+@media only screen and (min-width: 768px) {
+    section.programa {
     position: relative;
+}
 }
 
 video {
     display: none;
 }
 
-@media only screen and (min-width: 769px) {
+@media only screen and (min-width: 768px) {
     div.contenedor-video {
         max-width: 100%;
         overflow-x: hidden;
@@ -459,6 +483,12 @@ div.contenido-programa {
     width: 100%;
 }
 
+@media only screen and (min-width: 768px) {
+    div.contenido-programa {
+        position: absolute;
+    }
+}
+
 div.programa-evento {
     background-color: rgba(255, 255, 255, 0.8);
     padding: 15px;
@@ -472,14 +502,14 @@ div.programa-evento h2 {
 
 @media only screen and (min-width: 992px) {
     div.programa-evento {
-        margin-top: 2%;
+        margin-top: 10%;
         width: 50%;
     }
 }
 
 @media only screen and (min-width: 768px) {
     div.programa-evento {
-        margin-top: 2%;
+        margin-top: 10%;
         width: 70%;
     }
 }
