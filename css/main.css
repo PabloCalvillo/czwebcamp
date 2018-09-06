@@ -1024,6 +1024,21 @@ p.copyright {
     font-size: 1em;
 }
 
+p.copyright span {
+    color: #ffffff;
+}
+
+p.copyright span::before {
+    content: '\A'; 
+    white-space: pre;
+}
+
+@media only screen and (min-width: 768px) {
+    p.copyright span::before {
+        content: '';
+    }
+}
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
