@@ -223,6 +223,12 @@ ul {
     background-color: #e33000;
 }
 
+.button.hollow:hover {
+    background-color: #fe4918;
+    color: #ffffff;
+}
+
+
 .ver-todos {
     text-align: center;
 }
