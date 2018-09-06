@@ -204,8 +204,13 @@ ul {
        margin-top: 20px;
        display: inline-block;
        transition: all .4s ease;
-       display: block;
-        text-align: center;
+       border: 2px solid #fe4918;
+       
+}
+
+.button.hollow {
+    background-color: #ffffff;
+    color: #fe4918;
 }
 
 @media only screen and (min-width: 768px) {
@@ -218,7 +223,9 @@ ul {
     background-color: #e33000;
 }
 
-
+.ver-todos {
+    text-align: center;
+}
 
 /** Header **/
 div.hero {
@@ -698,8 +705,74 @@ p.numero {
     font-size: 4em;
     display: block;
     margin: 0 0 10px 0;
+    font-family: 'Oswald', sans-serif;
 }
 
+/** Tabla de precios **/
+
+ul.lista-precios > li {
+    padding: 10px;
+}
+
+@media only screen and (min-width: 768px) {
+    ul.lista-precios > li {
+        float: left;
+        width: 33.3%;
+    }
+}
+
+div.tabla-precio {
+    border: 1px solid #e1e1e1;
+    background-color: #ffffff;
+    padding: 40px 0;
+    text-align: center;
+    transition: all .35s ease;
+}
+
+div.tabla-precio:hover {
+    transform: scale(1.1);
+    border: 1px solid #fe4918;
+    box-shadow: 0px 0px 50px #666;
+}
+
+div.tabla-precio h3 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+div.tabla-precio ul li::before {
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900; 
+    display: inline-block;
+    vertical-align: top;
+    padding: 0 5px;
+    font-size: 20px;
+    color: green;
+    -webkit-font-smoothing: antialiased;
+    content: '\f00c'
+}
+
+div.tabla-precio ul li {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 14px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    color: #868686;
+    line-height: 26px;
+}
+
+div.tabla-precio p.numero {
+    color: #000000;
+    margin: 10px 0;
+}
+
+/** Mapa **/
+
+div.mapa {
+    height: 420px;
+    background-color: grey;
+}
 
 /* ==========================================================================
    Helper classes
