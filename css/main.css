@@ -796,13 +796,6 @@ div.mapa {
     background-color: grey;
 }
 
-@media only screen and (min-width: 768px) {
-    .seccion- h2 {  
-    margin-top: 0;
-    margin-bottom: 20px;
-}
-}
-
 /** Testimonios **/
 
 div.testimonios {
@@ -1049,8 +1042,15 @@ form.registro h3 {
 }
 
 form.registro label {
+    text-align: center;
     margin-bottom: 5px;
     font-weight: bold;
+}
+
+@media only screen and (min-width: 768px) {
+    form.registro label {
+        text-align: left;
+    }
 }
 
 h4 {
@@ -1058,6 +1058,8 @@ h4 {
     text-transform: uppercase;
     border-bottom: 2px solid #fe4918;
     padding-bottom: 10px;
+    margin-top: 0;
+    margin-bottom: 0;
     font-size: 1.2em;
 }
 
@@ -1097,6 +1099,10 @@ div.paquetes .lista-precios input {
     /*display: none;*/
 }
 
+.contenido-dia > div p {
+    margin-bottom: 20px;
+}
+
 @media only screen and (min-width: 768px) {
     .contenido-dia > div {
         float: left;
@@ -1130,29 +1136,65 @@ div.paquetes .lista-precios input {
 }
 
 .resumen .extras {
-    float: left;
-    width: 50%;
     padding: 30px;
+}
+
+@media only screen and (min-width: 768px) {
+    .resumen .extras {
+        float: left;
+        width: 50%;
+    }
 }
 
 .extras .pedido {
-    text-align: left;
+    text-align: center;
     margin-bottom: 10px;
 }
 
-.extras .pedido input {
-    margin: 10px 0 0 0;
+@media only screen and (min-width: 768px)  {
+    .extras .pedido {
+        text-align: left;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .extras .pedido input {
+        margin: 10px 0 0 0;
+    }
 }
 
 .resumen .total {
-    float: right;
-    width: 50%;
     padding: 30px;
 }
 
-#calcular-total {
-    float: left;
+div.total {
+    padding-top: 0 !important;
 }
+
+div.extras {
+    padding-bottom: 0 !important;
+}
+
+@media only screen and (min-width: 768px) {
+    .resumen .total {
+        float: right;
+        width: 50%;
+        padding: 30px;
+    }
+    
+    .calcular-total {
+    float: left;
+    }
+
+    div.total {
+        padding-top: 30px !important;
+    }
+
+    div.extras {
+        padding-bottom: 30px !important;
+    }
+}
+
 
 .resumen input {
     display: block;
