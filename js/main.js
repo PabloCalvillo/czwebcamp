@@ -42,10 +42,8 @@
         errorDiv.style.display = 'block';
         errorDiv.innerHTML = 'Estos campos son obligatorios';
         this.style.border = '1px solid red';
-      } else if (nombre.value != '' && apellidos.value != '' && email.value != '') {
-        errorDiv.style.display = 'none';
-        this.style.border = '1px solid rgb(169, 169, 169)';
       } else {
+        errorDiv.style.display = 'none';
         this.style.border = '1px solid rgb(169, 169, 169)';
       }
     }
