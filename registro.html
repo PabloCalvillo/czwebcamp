@@ -82,7 +82,7 @@
         </div>
         <div class="campo">
           <label for="email">Email:</label>
-          <input type="email" id="email" name="email">
+          <input type="email" id="email" name="email" autocomplete="on">
         </div>
         <div id="error"></div>
       </div>
@@ -93,7 +93,7 @@
         <ul class="lista-precios clearfix">
           <li>
             <div class="tabla-precio">
-              <h3>Pase por día (Viernes)</h3>
+              <h3>Pase por 1 día (Viernes)</h3>
               <p class="numero">30€</p>
               <ul>
                 <li>Bocadillos gratis</li>
@@ -116,7 +116,7 @@
                 <li>Todos los talleres</li>
               </ul>
               <div class="pedido">
-                <label for="pase_dia">Pases:</label>
+                <label for="pase_completo">Pases:</label>
                 <input type="number" min="0" id="pase_completo" size="3" placeholder="0">
               </div>
             </div>
@@ -132,7 +132,7 @@
               </ul>
               <div class="pedido">
                 <label for="pase_dosdias">Pases:</label>
-                <input type="number" min="0" id="pase_dia" size="3" placeholder="0">
+                <input type="number" min="0" id="pase_dosdias" size="3" placeholder="0">
               </div>
             </div>
           </li>
@@ -251,19 +251,19 @@
           <div class="extras">
             <div class="pedido">
               <label for="camisa_evento">Camisa del evento 10€ <small>(Promoción 10% dto.)</small></label>
-              <input type="number" id="camisa_evento" size="3" placeholder="0">
+              <input type="number" id="camisa_evento" min="0" size="3" placeholder="0">
             </div>
             <!--.pedido-->
             <div class="pedido">
               <label for="pegatinas">Paquete de 10 pegatinas 2€ <small>(HTML5, CSS3, JavaScript, Chrome)</small></label>
-              <input type="number" id="pegatinas" size="3" placeholder="0">
+              <input type="number" id="pegatinas" min="0" size="3" placeholder="0">
             </div>
             <!--.pedido-->
             <div class="pedido">
               <label for="regalo">Seleccione un regalo:</label><br>
               <select id="regalo" required>
                 <option value="">-- Seleccione un regalo --</option>
-                <option value="PEG">Pegatinas</option>
+                <option value="CRO">Cromos</option>
                 <option value="PUL">Pulseras</option>
                 <option value="CHA">Chapas</option>
               </select>

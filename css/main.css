@@ -1096,7 +1096,7 @@ div.paquetes .lista-precios input {
 
 .contenido-dia {
     padding: 20px;
-    /*display: none;*/
+    display: none;
 }
 
 .contenido-dia > div p {
@@ -1126,6 +1126,17 @@ div.paquetes .lista-precios input {
 .contenido-dia > div label time {
     color: #fe4918;
     font-weight: bold;
+}
+
+.eventos {
+    display: none;
+}
+
+#error {
+    clear: both;
+    display: none;
+    text-align: center;
+    border: 1px solid red;
 }
 
 /* Resumen registro */
@@ -1171,8 +1182,16 @@ div.total {
     padding-top: 0 !important;
 }
 
+div.total p {
+    margin: 1em;
+}
+
 div.extras {
     padding-bottom: 0 !important;
+}
+
+div.extras #calcular-total {
+    margin-top: 1.5em;
 }
 
 @media only screen and (min-width: 768px) {
@@ -1190,16 +1209,36 @@ div.extras {
         padding-top: 30px !important;
     }
 
+    div.extras #calcular-total {
+        margin-top: 1em;
+    }
+
     div.extras {
         padding-bottom: 30px !important;
     }
-}
 
+}
 
 .resumen input {
     display: block;
     margin: 10px auto;
 }
+
+#lista-productos,
+#suma-total {
+    background-color: #e1e1e1;
+    padding: 10px;
+    text-align: center;
+    font-size: 1.1em;
+    margin-bottom: 1.5em;
+}
+
+#lista-productos span {
+    border-bottom: 1px solid #353535;
+    font-weight: bold;
+    line-height: 2;
+}
+
 
 /* ==========================================================================
    Helper classes
