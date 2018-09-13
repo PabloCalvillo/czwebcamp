@@ -11,8 +11,8 @@
     }).addTo(map);
 
     L.marker([36.680832, -6.116391]).addTo(map)
-      .bindPopup('CZWebCamp 2018<br>Jerez de la Frontera')
-      .openPopup();
+      .bindTooltip('CZWebCamp')
+      .openTooltip();
 
     //Datos usuario
     var nombre = document.getElementById('nombre');
