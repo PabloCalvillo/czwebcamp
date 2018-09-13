@@ -3,8 +3,16 @@
   var regalo = document.getElementById('regalo');
 
   document.addEventListener('DOMContentLoaded', function () {
-    //Pagos y extras
 
+    var map = L.map('mapa').setView([36.680832, -6.116391], 17);
+
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+    }).addTo(map);
+
+    L.marker([36.680832, -6.116391]).addTo(map)
+      .bindPopup('CZWebCamp 2018<br>Jerez de la Frontera')
+      .openPopup();
 
     //Datos usuario
     var nombre = document.getElementById('nombre');
