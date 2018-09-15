@@ -13,8 +13,17 @@
       }).addTo(map);
 
       L.marker([36.680832, -6.116391]).addTo(map)
-        .bindTooltip('CZWebCamp')
-        .openTooltip();
+        .bindPopup('<b>CZWebCamp<br><a href="https://www.google.es/maps/dir//Plaza+Princi+Jerez,+7" target="_blank">Cómo llegar</a></b>')
+        .openPopup()
+
+      map.scrollWheelZoom.disable();
+      map.on('focus', () => {
+        map.scrollWheelZoom.enable();
+      });
+      map.on('blur', () => {
+        map.scrollWheelZoom.disable();
+      });
+
     }
 
   });
@@ -22,6 +31,9 @@
 
 
 $(function () {
+
+  // Lettering
+  $('.nombre-sitio').lettering();
 
   // Programa de conferencias
   $('.programa-evento .info-curso:first').show();
@@ -38,13 +50,21 @@ $(function () {
   });
 
   // Números animados
-  $('.resumen-evento li:nth-child(1) p').animateNumber({number: 6}, 1200);
-  $('.resumen-evento li:nth-child(2) p').animateNumber({number: 15}, 1200);
-  $('.resumen-evento li:nth-child(3) p').animateNumber({number: 3}, 1200);
-  $('.resumen-evento li:nth-child(4) p').animateNumber({number: 9}, 1200);
+  $('.resumen-evento li:nth-child(1) p').animateNumber({
+    number: 6
+  }, 1200);
+  $('.resumen-evento li:nth-child(2) p').animateNumber({
+    number: 15
+  }, 1200);
+  $('.resumen-evento li:nth-child(3) p').animateNumber({
+    number: 3
+  }, 1200);
+  $('.resumen-evento li:nth-child(4) p').animateNumber({
+    number: 9
+  }, 1200);
 
   // Cuenta regresiva
-  $('.cuenta-regresiva').countdown('2018/11/10 09:00:00', function(event) {
+  $('.cuenta-regresiva').countdown('2018/11/10 09:00:00', function (event) {
     $('#dias').html(event.strftime('%D'));
     $('#horas').html(event.strftime('%H'));
     $('#minutos').html(event.strftime('%M'));
