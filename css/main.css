@@ -161,7 +161,6 @@ body {
   .seccion p {
     margin-bottom: 25px;
   }
-
 }
 
 h2 {
@@ -169,6 +168,7 @@ h2 {
   font-size: 2.4em;
   text-transform: uppercase;
   text-align: center;
+  margin-bottom: 0;
 }
 
 @media only screen and (min-width: 768px) {
@@ -254,10 +254,6 @@ ul {
 h1.nombre-sitio span {
   position: relative;
   text-shadow: 0 0 30px black;
-}
-
-h1.nombre-sitio span:nth-child(2n) {
-    
 }
 
 @media only screen and (min-width: 992px) {
@@ -429,6 +425,14 @@ div.barra {
   padding: 20px 0;
 }
 
+.fixed {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+
 div.logo {
   width: 80%;
   float: left;
@@ -448,6 +452,7 @@ div.logo img {
 /** Nav principal **/
 nav.navegacion-principal {
   display: none;
+  width: 100%;
 }
 
 nav.navegacion-principal a {
@@ -461,6 +466,7 @@ nav.navegacion-principal a {
   display: block;
   text-align: center;
   margin-bottom: 10px;
+  clear: both;
 }
 
 nav.navegacion-principal a:last-child {
@@ -478,11 +484,12 @@ nav.navegacion-principal a:hover {
 
 @media only screen and (min-width: 768px) {
   nav.navegacion-principal {
-    display: 67%;
+    width: 67%;
     float: right;
     text-align: right;
     display: block;
     padding-top: 5px;
+    clear: none;
   }
 
   nav.navegacion-principal a {
@@ -869,6 +876,8 @@ div.tabla-precio p.numero {
 
 div.mapa {
   height: 420px;
+  margin-top: 10px;
+  z-index: 1;
 }
 
 /** Testimonios **/
@@ -1108,6 +1117,33 @@ p.copyright span::before {
 }
 
 /*** INTERNAS ***/
+/** Conferencia **/
+
+body.conferencia .navegacion-principal .activo {
+  border: 2px solid #fe4918;
+}
+
+section.conferencia {
+  padding-bottom: 0;
+}
+
+section.conferencia p {
+  margin-bottom: 0;
+}
+
+div.galeria {
+  margin-top: 10px;
+  text-align: center;
+}
+div.galeria a {
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+h2.galeria {
+  padding-top: 0;
+}
+
 /* Registro */
 
 form.registro h3 {
